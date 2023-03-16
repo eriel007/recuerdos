@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/material/fondos/icono1.ico">
+    <title>login</title>
+</head>
+<body>
+    <form action="" method="post" id="form">
+        <div id="formulario">
+            <h1>LOGIN</h1>
+            <div id="grupo">
+                <input type="text" id="name" required><span id="bar"></span>
+                <label for="">Name</label>
+            </div>
+            <div id="grupo">
+                <input type="password" id="password" required><span id="bar"></span>
+                <label for="">Passwords</label>
+            </div>
+            <button id="boton" onclick="cargar()">
+                <ion-icon name="paw-sharp"></ion-icon>
+            </button>
+            <p class="warnings" id="warnings"></p>
+        </div>
+    </form>
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

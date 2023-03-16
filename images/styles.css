@@ -1,0 +1,110 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    background-color: black;
+}
+p {
+    font-family: Brush Script MT;
+    font-size: 45px;
+    color: #ffffff;
+}
+#logo {
+    font-family: Brush Script MT;
+    justify-content: center;
+    background-color: rgb(233, 135, 7);
+    padding: 30px;
+    font-size: 90px;
+    display: flex;
+    overflow: hidden;
+    transition: 0.3s ease all;
+}
+#logo > div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 3s ease all;
+}
+#logo > div.animacion {
+    transform: translateY(-130px);
+}
+#logo .segundo {
+    position: absolute;
+    top: 120px;
+}
+#logo > div span {
+    font-size: 90px;
+    font-weight: normal;
+    line-height: 90px;
+}
+#contenedor1 {
+    padding-top: 30px;
+}
+#contenedor2 {
+    justify-content: right;
+}
+.img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 30px;
+    box-shadow: rgb(255, 255, 255) 0px 54px 55px,
+        rgba(255, 255, 255) 0px -12px 30px, rgba(255, 255, 255) 0px 4px 6px,
+        rgba(255, 255, 255) 0px 12px 13px, rgba(255, 255, 255) 0px -3px 5px;
+    transition: 0.4s;
+}
+#imagen1 {
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    margin-left: 140px;
+}
+#imagen1:hover {
+    transform: translateX(15px);
+}
+#imagen2 {
+    -moz-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    margin-right: 140px;
+}
+#imagen2:hover {
+    transform: translateX(-15px);
+}
+.imagen2 {
+    margin-left: 30px;
+}
+.parrafo {
+    margin: 60px;
+    padding: 30px;
+}
+#parrafo1 {
+    margin-left: 20px;
+    -moz-transform: rotate(4deg);
+    -o-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+}
+#parrafo2 {
+    margin-right: 20px;
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+}
+
+.conteiner {
+    display: flex;
+}
+#contenedor {
+    display: block;
+}
+@media screen and (max-width: 600px) {
+    #contenedor {
+        display: block;
+    }
+    .conteiner {
+        display: block;
+    }
+}

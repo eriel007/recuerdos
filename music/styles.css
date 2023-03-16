@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap");
+:root {
+    --background: #e0e5ec;
+    --gray: #797d7f;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    background-color: #e0e5ec;
+    cursor: pointer;
+    background-color: #1c1c1c;
+}
+p {
+    font-family: Brush Script MT;
+    font-size: 45px;
+    color: #ffffff;
+}
+#logo {
+    font-family: Brush Script MT;
+    justify-content: center;
+    background-color: rgb(233, 135, 7);
+    padding: 30px;
+    font-size: 90px;
+    display: flex;
+    overflow: hidden;
+    transition: 0.3s ease all;
+}
+#logo > div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: 3s ease all;
+}
+#logo > div.animacion {
+    transform: translateY(-130px);
+}
+#logo .segundo {
+    position: absolute;
+    top: 120px;
+}
+#logo > div span {
+    font-size: 90px;
+    font-weight: normal;
+    line-height: 90px;
+}
+.reproductor {
+    margin: 110px auto;
+    height: 600px;
+    width: 33%;
+    padding-top: 10px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1d1d1d;
+    box-shadow: 8px 8px 16px rgb(0, 0, 0), -8px -8px 16px rgba(20, 19, 19, 0.8);
+    transition: 0.4s;
+}
+.reproductor:hover {
+    transform: translateY(-15px);
+}
+.reproductor .box-img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #008ad9;
+    overflow: hidden;
+
+    margin: 20px auto;
+}
+
+.reproductor .box-img img {
+    height: 100%;
+    width: 100%;
+}
+.reproductor .botones {
+    height: 50px;
+    width: 95%;
+    margin: 20px auto 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.reproductor .botones .button {
+    border-radius: 50%;
+    padding: 10px;
+    height: 55px;
+    width: 55px;
+    box-shadow: 8px 8px 16px rgba(51, 52, 54, 0.8),
+        -8px -8px 16px rgba(56, 54, 54, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #008ad9;
+    border: #11cfb6 solid 2px;
+}
+.reproductor .botones .button i {
+    position: absolute;
+}
+.reproductor .botones .button .detener {
+    display: none;
+}
+.reproductor .barra_progreso {
+    margin: auto;
+    height: 10px;
+    width: 60%;
+    border-radius: 50px;
+    background-color: #008ad9;
+}
+.reproductor .barra_progreso .progreso {
+    height: 100%;
+    width: 2px;
+    background-color: #11cfb6;
+    border-radius: 20px;
+}
+.reproductor .barras_animadas {
+    height: 30px;
+    width: 42%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.reproductor .barras_animadas span {
+    height: 20px;
+    width: 3px;
+    transform: scaleY(0);
+    background-color: #11cfb6;
+    transform-origin: bottom;
+}
+.reproductor .titulo_cancion {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.clase1 {
+    display: none !important;
+}
+
+.clase2 {
+    display: block !important;
+}
+
+.animar1 {
+    animation: barras1 0.4s infinite linear alternate;
+}
+#letras {
+    padding-top: 40px;
+    color: #11cfb6;
+    text-align: center;
+    font-size: 55px;
+    font-family: Brush Script MT;
+}
+@keyframes barras1 {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(0.7);
+    }
+}
+.animar2 {
+    animation: barras2 0.4s infinite linear alternate;
+    animation-delay: 0.1s;
+}
+
+@keyframes barras2 {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1.4);
+    }
+}
+.animar3 {
+    animation: barras3 0.4s infinite linear alternate;
+}
+
+@keyframes barras3 {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(2);
+    }
+}
+@media (max-width: 800px) {
+    .reproductor {
+        width: 40%;
+    }
+}
+@media (max-width: 700px) {
+    .reproductor {
+        width: 50%;
+    }
+}
+@media (max-width: 500px) {
+    .reproductor {
+        width: 70%;
+        transform: scale(0.5);
+    }
+}
+@media (max-width: 400px) {
+    .reproductor {
+        width: 80%;
+        transform: scale(0.5);
+        margin: -80px auto;
+    }
+}
